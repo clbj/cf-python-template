@@ -3,3 +3,4 @@ applications:
 - name: cf-python-template
   memory: 128M
   instances: 1
+  command: FLASK_APP=application/app.py flask run
