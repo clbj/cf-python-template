@@ -1,10 +1,10 @@
 from datetime import datetime
-from flask import Flask, render_template
+from flask import Flask
 from application import app
 
 @app.route('/')
 def home():
-    return render_template("home.html")
+    return "Everything Fine", 200
 
 @app.route('/notfound')
 def notfound():
